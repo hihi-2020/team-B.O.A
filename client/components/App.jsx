@@ -1,13 +1,16 @@
 import React from 'react'
 import {Link, Route} from 'react-router-dom'
-import Sound from '../components/Alex'
+import Sound from './Sound'
 
-const App = () => {
+class App extends React.Component {
+  
+  render(){
+    
   return (
     <>
       <Sound/>
     </>
   )
 }
-
+}
 export default App

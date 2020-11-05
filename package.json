@@ -42,6 +42,7 @@
   },
   "dependencies": {
     "express": "^4.17.1",
-    "howler": "^2.2.1"
+    "howler": "^2.2.1",
+    "react-image-mapper": "0.0.15"
   }
 }
