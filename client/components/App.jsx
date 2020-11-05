@@ -1,9 +1,6 @@
 import React from 'react'
 import Snake from './Snake'
-
-import {Link, Route} from 'react-router-dom'
 import Sound from './Sound'
-
 
 class App extends React.Component {
 
@@ -124,5 +121,5 @@ class App extends React.Component {
       )
    }
 
-
+}
 export default App
