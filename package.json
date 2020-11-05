@@ -42,6 +42,7 @@
   },
   "dependencies": {
     "express": "^4.17.1",
-    "react-sticky-mouse-tooltip": "0.0.1"
+    "react-sticky-mouse-tooltip": "0.0.1",
+    "howler": "^2.2.1"
   }
 }

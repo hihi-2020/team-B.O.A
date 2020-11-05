@@ -1,7 +1,8 @@
 import React from 'react'
 import Snake from './Snake'
 
-// import Mouse from './Mouse'
+import {Link, Route} from 'react-router-dom'
+import Sound from './Sound'
 
 
 class App extends React.Component {
@@ -118,9 +119,10 @@ class App extends React.Component {
              {/* <button>Go faster!</button> */}
              <button onClick={this.growSnake}>Grow Snake</button>
              <Snake snakeDots={this.state.snakeDots} colour={this.state.colour}/>
+             <Sound/>
           </div>
       )
    }
-}
+
 
 export default App
