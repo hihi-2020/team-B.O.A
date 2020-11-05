@@ -41,6 +41,7 @@
     "webpack-cli": "^3.3.11"
   },
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "react-sticky-mouse-tooltip": "0.0.1"
   }
 }
