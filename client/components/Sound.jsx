@@ -1,8 +1,19 @@
 import React from 'react'
 import {Link, Route} from 'react-router-dom'
 import{Howler,Howl} from 'howler'
+<<<<<<< HEAD:client/components/Sound.jsx
 import ReactImage from 'react-image-mapper';
 
+||||||| 013d491:client/components/Alex.jsx
+// import coin from '../../public/images/coin.jpg'
+
+
+
+=======
+// import coin from '../../public/images/coin.jpg'
+
+
+>>>>>>> 0b2112ec500d8ddd7564729f1a1339dd220b8bf6:client/components/Alex.jsx
 const audio ={
     count: 0,
     src: 'https://www.fesliyanstudios.com/play-mp3/6236'
@@ -12,6 +23,7 @@ const img ={
     src: '../images/coin.png'
 }
 
+<<<<<<< HEAD:client/components/Sound.jsx
 
 const randomStyle ={
     left: 0,
@@ -31,6 +43,11 @@ class Sound  extends React.Component  {
     changePosition =()=>{
 
     }
+||||||| 013d491:client/components/Alex.jsx
+class Sound  extends React.Component  {
+=======
+class Sound extends React.Component  {
+>>>>>>> 0b2112ec500d8ddd7564729f1a1339dd220b8bf6:client/components/Alex.jsx
     
     playSound = (src) =>{
         const sound = new Howl({
