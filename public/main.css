@@ -1,0 +1,8 @@
+html {
+    font-family: sans-serif;
+}
+
+.page-header {
+    display: flex;
+    place-content: center;
+}
