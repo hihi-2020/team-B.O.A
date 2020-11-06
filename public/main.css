@@ -1,3 +1,62 @@
+<<<<<<< HEAD
 .random{
     position: absolute;;
 }
+||||||| 0b2112e
+=======
+html {
+    font-family: sans-serif;
+}
+
+.page-header {
+    display: flex;
+    place-content: center;
+}
+
+.olis-div {
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+.circle {
+    border: none;
+    transition: 0.3s;
+    border-radius: 100%
+}
+
+.red {
+    background-color: rgb(255, 93, 93);
+}
+
+.blue {
+    background-color: rgb(102, 102, 255);
+}
+
+.green {
+    background-color: rgb(65, 153, 87);
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.black {
+    background-color: black;
+}
+
+.off-white {
+    margin: 0px 0px
+}
+
+.grow {
+    width: 70px;
+    height: 70px;
+    margin: -10px;
+}
+
+.shrink {
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+}
+>>>>>>> 82f3e103fc6eb719d5a324b21bbf0e20fd2d0854

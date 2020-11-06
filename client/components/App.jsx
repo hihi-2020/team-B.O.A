@@ -1,32 +1,9 @@
+
 import React from 'react'
-<<<<<<< HEAD
-import {Link, Route} from 'react-router-dom'
-import Sound from './Sound'
 
-class App extends React.Component {
-  
-  render(){
-    
-  return (
-    <>
-      <Sound/>
-    </>
-  )
-}
-}
-||||||| 013d491
-import {Link, Route} from 'react-router-dom'
-import Sound from '../components/Alex'
-
-const App = () => {
-  return (
-    <>
-      <Sound/>
-    </>
-  )
-}
-
-=======
+import React, { Component } from 'react'
+import Page_Head from "./Page_Head"
+import Oli from "./Oli"
 import Snake from './Snake'
 import Sound from './Sound'
 
@@ -145,10 +122,11 @@ class App extends React.Component {
              <button onClick={this.growSnake}>Grow Snake</button>
              <Snake snakeDots={this.state.snakeDots} colour={this.state.colour}/>
              <Sound/>
+             <Oli/>
+
           </div>
       )
    }
 
 }
->>>>>>> 0b2112ec500d8ddd7564729f1a1339dd220b8bf6
 export default App
