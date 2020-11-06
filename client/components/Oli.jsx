@@ -5,7 +5,7 @@ import Pixel from './Pixel'
 export default class Oli extends Component{
 
   proximityFunction (e) {
-    console.log(e.clientX)
+  
   }
   
   render() {

@@ -7,7 +7,7 @@ class Pixel extends React.Component {
   }
 
   componentDidMount() {
-    console.log('helo :>> ');
+    
     this.setState({
       className: "black shrink circle"
     })
