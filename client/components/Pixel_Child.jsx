@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom'
 
 
 
-class Pixel extends React.Component {
+class PixelChild extends React.Component {
   
 
   state = {
@@ -20,7 +20,7 @@ class Pixel extends React.Component {
     
 
     this.setState({
-      className: "black shrink"
+      className: "black shrink circle"
     })
   }
 
@@ -47,4 +47,4 @@ class Pixel extends React.Component {
 }
 
 
-export default Pixel
+export default PixelChild

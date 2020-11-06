@@ -14,7 +14,7 @@ html {
 
 .circle {
     border: none;
-    transition: 0.3s;
+    transition: 1s;
     border-radius: 100%
 }
 
@@ -52,4 +52,8 @@ html {
     width: 30px;
     height: 30px;
     margin: 10px;
+}
+
+.absolute {
+    position: relative;
 }

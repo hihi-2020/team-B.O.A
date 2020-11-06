@@ -2,10 +2,9 @@ import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 import Pixel from './Pixel'
 
-export default class Oli extends Component{
+export default class Oli extends React.Component{
 
   proximityFunction (e) {
-    console.log(e.clientX)
   }
   
   render() {
