@@ -4,7 +4,20 @@ import Pixel from './Pixel'
 
 export default class Oli extends React.Component{
 
-  proximityFunction (e) {
+  state = {
+    mouseX: 0,
+    mouseY: 0
+  }
+
+  getMouseCoords = evt => {
+    
+    this.setState({
+      mouseX: evt.pageX,
+      mouseY: evt.pageY
+    })
+
+    
+
   }
   
   render() {
@@ -12,11 +25,11 @@ export default class Oli extends React.Component{
     let smallArr = [0]
 
     return (
-      <div className="olis-div" onMouseMove={this.proximityFunction}> 
-        {arr.map(item => {
+      <div className="olis-div" onMouseMove={this.getMouseCoords}> 
+        {arr.map((item, i) => {
           return (
             <>
-              <Pixel grow_color="black"/>
+              <Pixel mouseX = {this.state.mouseX} mouseY = {this.state.mouseY} grow_color="black" keyProp={i.toString()}/>
             </>
           )
         })}
