@@ -17,7 +17,6 @@ class App extends React.Component {
       ],
       direction: 'RIGHT',
       snakeButton: 'Start the Snake!',
-      snakeMoving: false,
       colour: 'black'
    }
 
@@ -44,6 +43,9 @@ class App extends React.Component {
          case 39:
            this.setState({direction: 'RIGHT'})
            break
+         case 32:
+            this.growSnake()
+            break
        }
    }
 
@@ -73,28 +75,47 @@ class App extends React.Component {
    }
 
    toggleSnakeMovement = () => {
-      if(!this.state.snakeMoving){
-         let move = setInterval(this.moveSnake, 200)
-         this.setState({
-            snakeButton: 'Stop the Snake!',
-            snakeMoving: true
-         })
-      } else {
-         clearInterval(move)
-         this.setState({
-            snakeButton: 'Start the Snake!',
-            snakeMoving: false
-         })
-      }
+      setInterval(this.moveSnake, 200)
+      document.querySelector('#start').classList.add('hidden')
    }
 
    checkIfOffScreen = () => {
       let head = this.state.snakeDots[this.state.snakeDots.length - 1]
-      // if(head[0] >= window.innerWidth){
-         // this.setState({
-         //    direction: 'DOWN'
-         // })
-      // }
+      switch (this.state.direction) {
+         case 'RIGHT':
+            if(head[0] >= window.innerWidth - 30){
+               this.setState({
+                  direction: 'DOWN'
+               })
+               this.growSnake()
+            }
+            break
+         case 'LEFT':
+            if(head[0] <= 10){
+               this.setState({
+                  direction: 'UP'
+               })
+               this.growSnake()
+            }
+            break
+         case 'UP':
+            if(head[1] <= 10){
+               this.setState({
+                  direction: 'RIGHT'
+               })
+               this.growSnake()
+            }
+            break
+         case 'DOWN':
+         if(head[1] >= window.innerHeight - 30){
+            this.setState({
+               direction: 'LEFT'
+            })
+            this.growSnake()
+         }
+         break
+      }
+      
    }
 
    pickColour = () => {
@@ -117,7 +138,7 @@ class App extends React.Component {
    render() {
       return (
           <div>
-             <button onClick={this.toggleSnakeMovement}>{this.state.snakeButton}</button>
+             <button id='start' onClick={this.toggleSnakeMovement}>{this.state.snakeButton}</button>
              {/* <button>Go faster!</button> */}
              <button onClick={this.growSnake}>Grow Snake</button>
              <Snake snakeDots={this.state.snakeDots} colour={this.state.colour}/>
