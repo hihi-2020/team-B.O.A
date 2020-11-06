@@ -1,7 +1,7 @@
 {
-  "name": "taxonomic-routing",
+  "name": "react-mixup",
   "version": "0.2.0",
-  "description": "Using React Router to navigate the taxonomic rank",
+  "description": "React Mixup project",
   "repository": "https://github.com/dev-academy-challenges/taxonomic-routing.git",
   "main": "server/index.js",
   "scripts": {
