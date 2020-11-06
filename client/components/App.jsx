@@ -1,7 +1,7 @@
 
 import React from 'react'
 
-import React, { Component } from 'react'
+// import React, { Component } from 'react'
 import Page_Head from "./Page_Head"
 import Oli from "./Oli"
 import Snake from './Snake'

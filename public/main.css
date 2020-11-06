@@ -1,9 +1,3 @@
-<<<<<<< HEAD
-.random{
-    position: absolute;;
-}
-||||||| 0b2112e
-=======
 html {
     font-family: sans-serif;
 }
@@ -59,4 +53,12 @@ html {
     height: 30px;
     margin: 10px;
 }
->>>>>>> 82f3e103fc6eb719d5a324b21bbf0e20fd2d0854
+.random{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+}
+.count{
+    position: relative;
+    left:90%;
+}

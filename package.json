@@ -42,14 +42,7 @@
   },
   "dependencies": {
     "express": "^4.17.1",
-<<<<<<< HEAD
     "howler": "^2.2.1",
     "react-image-mapper": "0.0.15"
-||||||| 013d491
-    "howler": "^2.2.1"
-=======
-    "react-sticky-mouse-tooltip": "0.0.1",
-    "howler": "^2.2.1"
->>>>>>> 0b2112ec500d8ddd7564729f1a1339dd220b8bf6
   }
 }
