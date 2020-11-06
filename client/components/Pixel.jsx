@@ -20,7 +20,7 @@ class Pixel extends React.Component {
 
     this.setState({
       className: "black shrink",
-  
+      absXDistance: 100
     })
   }
 
@@ -76,7 +76,7 @@ class Pixel extends React.Component {
     onMouseLeave={this.mouseExit} 
     className={this.state.className + " circle"} 
     key={this.props.keyProp}>
-    444 {this.state.absXDistance}
+    --- {this.state.absXDistance}
 
     </div>
     )
