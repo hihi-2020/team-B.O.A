@@ -33,15 +33,19 @@ class App extends React.Component {
       switch (e.keyCode) {
          case 38:
            this.setState({direction: 'UP'})
+           this.growSnake()
            break
          case 40:
            this.setState({direction: 'DOWN'})
+           this.growSnake()
            break
          case 37:
            this.setState({direction: 'LEFT'})
+           this.growSnake()
            break
          case 39:
            this.setState({direction: 'RIGHT'})
+           this.growSnake()
            break
          case 32:
             this.growSnake()
@@ -140,7 +144,6 @@ class App extends React.Component {
           <div>
              <button id='start' onClick={this.toggleSnakeMovement}>{this.state.snakeButton}</button>
              {/* <button>Go faster!</button> */}
-             <button onClick={this.growSnake}>Grow Snake</button>
              <Snake snakeDots={this.state.snakeDots} colour={this.state.colour}/>
              <Sound/>
              <Oli/>
