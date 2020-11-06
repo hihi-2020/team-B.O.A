@@ -9,7 +9,7 @@ export default class Oli extends Component{
   }
   
   render() {
-    let arr = Array(300).fill(0)
+    let arr = Array(500).fill(0)
     let smallArr = [0]
 
     return (
@@ -17,7 +17,7 @@ export default class Oli extends Component{
         {arr.map(item => {
           return (
             <>
-              <Pixel grow_color="black"/>
+              <Pixel grow_color="blue"/>
             </>
           )
         })}

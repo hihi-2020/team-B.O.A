@@ -9,13 +9,13 @@ class Pixel extends React.Component {
   componentDidMount() {
     
     this.setState({
-      className: "black shrink circle"
+      className: this.props.grow_color + " shrink circle"
     })
   }
 
   mouseEnter = evt => {
     this.setState({
-      className: this.props.grow_color + " grow"
+      className: "red grow"
     })
   }
 
