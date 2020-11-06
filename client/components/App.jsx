@@ -30,6 +30,7 @@ class App extends React.Component {
 
    onkeydown = (e) => {
       e = e || window.event
+      e.preventDefault()
       switch (e.keyCode) {
          case 38:
            this.setState({direction: 'UP'})

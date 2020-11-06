@@ -9,7 +9,7 @@ export default class Oli extends Component{
   }
   
   render() {
-    let arr = Array(500).fill(0)
+    let arr = Array(252).fill(0)
     let smallArr = [0]
 
     return (
